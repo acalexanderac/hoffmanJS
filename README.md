@@ -22,7 +22,9 @@ First, import the HuffmanCoding class from huffman.js:
 const { HuffmanCoding } = require("./huffman");
 
 Then, create a new instance of HuffmanCoding, build a Huffman tree, and encode and decode a message:
+```
 let huffman = new HuffmanCoding();
+
 let frequencies = {
   a: 5,
   b: 9,
@@ -31,25 +33,35 @@ let frequencies = {
   e: 16,
   f: 45,
 };
+
 huffman.buildTree(frequencies);
+
 let encoded = huffman.encode("abcdef");
+
 console.log("Encoded:", encoded);
+
 let decoded = huffman.decode(encoded);
+
 console.log("Decoded:", decoded);
+```
 
 
 # 🧪 Testing
 This project uses Jest, a JavaScript testing framework, for running tests.
 
 To run the tests, you will first need to install the project dependencies. You can do this by running the following command in your terminal:
+```
 
-### npm install
+npm install
 
+```
 This command installs all the necessary dependencies for the project, as listed in the package.json file. In this case, it will install Jest.
 
 Once the dependencies are installed, you can run the tests using the following command:
+```
 
-### npm test
+npm test
+```
 
 This command runs the test script defined in the package.json file, which in turn runs Jest. Jest will automatically find and run all test files in the project. By convention, these are files that end with .test.js or .spec.js, or files located in a directory named __tests__.
 
